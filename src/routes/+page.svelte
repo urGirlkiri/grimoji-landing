@@ -1,1 +1,81 @@
-<h1>Welcome to Grimoji</h1>
+<script>
+	import { palette } from '$lib/palette';
+</script>
+
+<main
+	class="min-h-screen; relative flex flex-col justify-between bg-(--void-black) bg-[url('/large_game.png')] bg-cover bg-center"
+	style:--void-black={palette.voidBlack}
+	style:--midnight={palette.midnight}
+	style:--twilight={palette.twilight}
+	style:--dusk={palette.dusk}
+	style:--slate={palette.slate}
+	style:--mist={palette.mist}
+	style:--moonlight={palette.moonlight}
+	style:--true-white={palette.trueWhite}
+	style:--crimson={palette.crimson}
+	style:--magic-cyan={palette.magicCyan}
+>
+	<div
+		class="pointer-events-none absolute top-1/3 left-1/2 h-100 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-(--magic-cyan)/5 blur-[130px]"
+	></div>
+
+	<header class="z-10 flex justify-between items-center mx-auto px-6 py-6 w-full max-w-6xl">
+		<div
+			class="flex flex-row items-center justify-center gap-2 text-xl font-bold tracking-wider text-(--moonlight) drop-shadow-[0_2px_10px_rgba(217,248,250,0.3)]"
+		>
+			<img src="favicon.svg" width="32" height="32" class="-mt-2" alt="Favicon" />
+			Grimoji
+		</div>
+		<span
+			class="rounded-full border border-(--twilight) bg-(--midnight) px-3 py-1 text-xs tracking-widest text-(--slate) uppercase"
+		>
+			Live
+		</span>
+	</header>
+
+	<section
+		class="z-10 flex flex-col justify-center items-center mx-auto px-6 py-20 max-w-4xl text-center grow"
+	>
+		<h1 class="mb-6 text-4xl font-extrabold tracking-tight text-(--moonlight) md:text-6xl">
+			Grimoji
+		</h1>
+
+		<p class="mx-auto mb-10 max-w-xl text-base leading-relaxed text-(--mist) md:text-lg">
+			A gothic alchemy puzzle game combining the grid-sliding loops of <span
+				class="font-semibold text-(--true-white)">2048</span
+			>
+			with explosive <span class="font-semibold text-(--true-white)">match-3</span> chain reactions.
+		</p>
+
+		<div class="flex sm:flex-row flex-col justify-center items-center gap-4 w-full sm:w-auto">
+			<a
+				href="https://github.com/urGirlkiri/grimoji"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="w-full rounded-xl border border-(--twilight) bg-(--midnight) px-8 py-4 text-center font-medium tracking-wide text-(--mist) transition-all duration-200 hover:bg-(--twilight) hover:text-(--true-white) sm:w-64"
+			>
+			  Source Code
+			</a>
+			<a
+				href="https://play.grimoji.io"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="w-full rounded-xl bg-(--dusk) px-8 py-4 text-center font-bold tracking-wide text-(--true-white) shadow-(--mist)/20 shadow-lg transition-all duration-200 hover:bg-(--mist) sm:w-64"
+			>
+				Play Demo
+			</a>
+		</div>
+	</section>
+
+	<footer class="z-10 w-full border-t border-(--midnight) bg-(--midnight)/30 py-6">
+		<div
+			class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-xs text-(--slate) sm:flex-row"
+		>
+			<p>&copy; 2026 Ghetto Coders.</p>
+			<p>
+				Designed & Developed by
+				<span class="font-medium text-(--moonlight)">Christin Nyakanyanga</span>
+			</p>
+		</div>
+	</footer>
+</main>
