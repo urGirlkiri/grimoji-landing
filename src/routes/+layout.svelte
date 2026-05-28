@@ -16,11 +16,17 @@
 		content="Grimoji, gothic logic, emoji alchemy, 2048 merge puzzle, match 3 games, sliding tile, casual magic, Ghetto Coders, Christin Nyakanyanga"
 	/>
 	<link rel="canonical" href="https://grimoji.io" />
-	<link rel="icon" href={favicon} />
 
 	<meta property="og:site_name" content="Grimoji" />
 	<meta property="og:title" content="Grimoji | Official Gothic Alchemy Puzzle Game" />
 	<meta property="og:url" content="https://grimoji.io/" />
+
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Grimoji" />
+	<link rel="manifest" href="/site.webmanifest" />
 
 	{@html `
     <script type="application/ld+json">
