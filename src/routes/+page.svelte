@@ -3,7 +3,7 @@
 </script>
 
 <main
-	class="min-h-screen; relative flex flex-col justify-between bg-(--void-black) bg-[url('/large_game.png')] bg-cover bg-center"
+	class="relative flex min-h-screen flex-col justify-between bg-(--void-black) bg-[url('/large_game.png')] bg-cover bg-center font-['Caudex']"
 	style:--void-black={palette.voidBlack}
 	style:--midnight={palette.midnight}
 	style:--twilight={palette.twilight}
@@ -21,7 +21,7 @@
 
 	<header class="z-10 flex justify-between items-center mx-auto px-6 py-6 w-full max-w-6xl">
 		<div
-			class="flex flex-row items-center justify-center gap-2 text-xl font-bold tracking-wider text-(--moonlight) drop-shadow-[0_2px_10px_rgba(217,248,250,0.3)]"
+			class="font-['Eagle Lake'] flex flex-row items-center justify-center gap-2 text-xl font-bold tracking-wider text-(--moonlight) drop-shadow-[0_2px_10px_rgba(217,248,250,0.3)]"
 		>
 			<img src="favicon.svg" width="32" height="32" class="-mt-2" alt="Favicon" />
 			Grimoji
@@ -36,11 +36,13 @@
 	<section
 		class="z-10 flex flex-col justify-center items-center mx-auto px-6 py-20 max-w-4xl text-center grow"
 	>
-		<h1 class="mb-6 text-4xl font-extrabold tracking-tight text-(--moonlight) md:text-6xl">
+		<h1
+			class="font-['Eagle Lake'] mb-6 text-4xl font-extrabold tracking-tight text-(--moonlight) md:text-6xl"
+		>
 			Grimoji
 		</h1>
 
-		<p class="mx-auto mb-10 max-w-xl text-base leading-relaxed text-(--mist) md:text-lg">
+		<p class="mx-auto mb-10 max-w-xl text-base leading-relaxed text-(--moonlight) md:text-lg">
 			A gothic alchemy puzzle game combining the grid-sliding loops of <span
 				class="font-semibold text-(--true-white)">2048</span
 			>
@@ -71,10 +73,12 @@
 		<div
 			class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-xs text-(--slate) sm:flex-row"
 		>
-			<p>&copy; 2026 Ghetto Coders.</p>
+			<a href="https://ghettocoders.com" target="_blank" rel="noopener noreferrer">&copy; 2026 Ghetto Coders.</a>
 			<p>
 				Designed & Developed by
-				<span class="font-medium text-(--moonlight)">Christin Nyakanyanga</span>
+				<a href="https://girlkiri.com" target="_blank" rel="noopener noreferrer" class="font-medium text-(--moonlight)">
+					Christin Nyakanyanga
+				</a>
 			</p>
 		</div>
 	</footer>
