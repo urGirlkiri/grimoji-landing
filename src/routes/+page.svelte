@@ -1,19 +1,9 @@
 <script>
-	import { palette } from '$lib/palette';
+	import Palette from '$lib/components/palette.svelte';
 </script>
 
-<main
+<Palette
 	class="relative flex min-h-screen flex-col justify-between bg-(--void-black) bg-[url('/large_game.png')] bg-cover bg-center font-['Caudex']"
-	style:--void-black={palette.voidBlack}
-	style:--midnight={palette.midnight}
-	style:--twilight={palette.twilight}
-	style:--dusk={palette.dusk}
-	style:--slate={palette.slate}
-	style:--mist={palette.mist}
-	style:--moonlight={palette.moonlight}
-	style:--true-white={palette.trueWhite}
-	style:--crimson={palette.crimson}
-	style:--magic-cyan={palette.magicCyan}
 >
 	<div
 		class="pointer-events-none absolute top-1/3 left-1/2 h-100 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-(--magic-cyan)/5 blur-[130px]"
@@ -73,7 +63,11 @@
 		<div
 			class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-xs text-(--slate) sm:flex-row"
 		>
-			<a href="https://ghettocoders.com" target="_blank" rel="noopener noreferrer">&copy; 2026 Ghetto Coders.</a>
+			<p class="flex gap-1">
+			 <a href="/privacy" class="underline">Privacy Policy</a>
+			 <span>|</span>
+				<a href="https://ghettocoders.com" target="_blank" rel="noopener noreferrer">&copy; 2026 Ghetto Coders.</a>
+			</p>
 			<p>
 				Designed & Developed by
 				<a href="https://girlkiri.com" target="_blank" rel="noopener noreferrer" class="font-medium text-(--moonlight)">
@@ -82,4 +76,4 @@
 			</p>
 		</div>
 	</footer>
-</main>
+</Palette>
