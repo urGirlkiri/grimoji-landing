@@ -7,16 +7,20 @@
 	class="relative flex min-h-screen flex-col justify-between bg-(--void-black) bg-[url('/large_game.png')] bg-cover bg-center font-['Caudex']"
 >
 	<div
-		class="pointer-events-none absolute top-1/3 left-1/2 h-100 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-(--magic-cyan)/5 blur-[130px]"
+		class="top-1/3 left-1/2 absolute rounded-full w-150 h-100 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
 	></div>
 
-	<header class="z-10 flex justify-between items-center mx-auto px-6 py-6 w-full max-w-6xl">
+	<header class="z-10 flex justify-between items-center mx-auto px-4 py-6 w-full max-w-6xl">
 		<div
-			class="font-['Eagle Lake'] flex flex-row items-center justify-center gap-2 text-xl font-bold tracking-wider text-(--moonlight) drop-shadow-[0_2px_10px_rgba(217,248,250,0.3)]"
+			class="font-['Eagle Lake'] flex flex-row items-center justify-center gap-2 text-xl font-bold tracking-wider text-(--moonlight) "
 		>
-			<img src="favicon.svg" width="32" height="32" class="-mt-2" alt="Favicon" />
-			Grimoji
+			<img src="favicon.svg" width="64" height="64" class="-mt-2" alt="Favicon" />
 		</div>
+		<h1
+			class="font-['Eagle Lake'] -ml-8 mb-6 text-4xl font-extrabold tracking-tight text-(--moonlight) md:text-6xl"
+		>
+			Grimoji
+		</h1>
 		<span
 			class="rounded-full border border-(--twilight) bg-(--midnight) px-3 py-1 text-xs tracking-widest text-(--slate) uppercase"
 		>
@@ -27,13 +31,7 @@
 	<section
 		class="z-10 flex flex-col justify-center items-center mx-auto px-6 py-20 max-w-4xl text-center grow"
 	>
-		<h1
-			class="font-['Eagle Lake'] mb-6 text-4xl font-extrabold tracking-tight text-(--moonlight) md:text-6xl"
-		>
-			Grimoji
-		</h1>
-
-		<p class="mx-auto mb-10 max-w-xl text-base leading-relaxed text-(--moonlight) md:text-lg">
+		<p class="mx-auto mb-10 mt-24 max-w-xl text-base leading-relaxed text-(--moonlight) md:text-lg">
 			A gothic alchemy puzzle game combining the grid-sliding loops of <span
 				class="font-semibold text-(--true-white)">2048</span
 			>
