@@ -1,4 +1,5 @@
 <script>
+	import { platforms } from '$lib';
 	import Palette from '$lib/components/palette.svelte';
 </script>
 
@@ -46,7 +47,7 @@
 				rel="noopener noreferrer"
 				class="w-full rounded-xl border border-(--twilight) bg-(--midnight) px-8 py-4 text-center font-medium tracking-wide text-(--mist) transition-all duration-200 hover:bg-(--twilight) hover:text-(--true-white) sm:w-64"
 			>
-			  Source Code
+				Source Code
 			</a>
 			<a
 				href="https://play.grimoji.io"
@@ -57,6 +58,23 @@
 				Play Demo
 			</a>
 		</div>
+		<div class="flex flex-wrap justify-center items-center gap-3 p-4">
+			{#each platforms as platform}
+				<a
+					href={platform.url}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="rounded-md focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 hover:scale-105 transition-transform duration-200"
+					aria-label="Play Grimoji on {platform.name}"
+				>
+					<img
+						src={platform.badge}
+						alt="{platform.name} Badge"
+						class="shadow-sm w-auto h-8 object-contain"
+					/>
+				</a>
+			{/each}
+		</div>
 	</section>
 
 	<footer class="z-10 w-full border-t border-(--midnight) bg-(--midnight)/30 py-6">
@@ -64,13 +82,20 @@
 			class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-xs text-(--slate) sm:flex-row"
 		>
 			<p class="flex gap-1">
-			 <a href="/privacy" class="underline">Privacy Policy</a>
-			 <span>|</span>
-				<a href="https://ghettocoders.com" target="_blank" rel="noopener noreferrer">&copy; 2026 Ghetto Coders.</a>
+				<a href="/privacy" class="underline">Privacy Policy</a>
+				<span>|</span>
+				<a href="https://ghettocoders.com" target="_blank" rel="noopener noreferrer"
+					>&copy; 2026 Ghetto Coders.</a
+				>
 			</p>
 			<p>
 				Designed & Developed by
-				<a href="https://girlkiri.com" target="_blank" rel="noopener noreferrer" class="font-medium text-(--moonlight)">
+				<a
+					href="https://girlkiri.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="font-medium text-(--moonlight)"
+				>
 					Christin Nyakanyanga
 				</a>
 			</p>
