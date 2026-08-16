@@ -1,6 +1,5 @@
 <script lang="ts">
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
 </script>
@@ -29,6 +28,7 @@
 	<meta name="application-name" content="Grimoji" />
 	<link rel="manifest" href="/site.webmanifest" />
 
+	<!-- eslint-disable svelte/no-at-html-tags, no-useless-escape -->
 	{@html `
     <script type="application/ld+json">
     [
@@ -57,8 +57,9 @@
       "operatingSystem": "Android, IOS, Windows, Linux, MacOS"
       }
     ]
-    <\/script>
+    \<\/script>
   `}
+	<!-- eslint-enable svelte/no-at-html-tags, no-useless-escape -->
 </svelte:head>
 
 {@render children()}
