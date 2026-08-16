@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Grimoji | Gothic Emoji Alchemy Puzzle Game</title>
+	<title>Grimoji | Match and Merge Emojis Puzzle Game</title>
 	<meta
 		name="description"
 		content="Merge magical elements on a dark runic grid. Discover 800+ unique emoji recipes in Grimoji, the ultimate gothic alchemy puzzle game combining 2048 and match-3 mechanics."
@@ -18,7 +18,7 @@
 	<link rel="canonical" href="https://grimoji.io" />
 
 	<meta property="og:site_name" content="Grimoji" />
-	<meta property="og:title" content="Grimoji | Official Gothic Alchemy Puzzle Game" />
+	<meta property="og:title" content="Grimoji | Match and Merge Emojis Puzzle Game" />
 	<meta property="og:url" content="https://grimoji.io/" />
 
 	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
