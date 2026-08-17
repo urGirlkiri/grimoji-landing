@@ -43,8 +43,13 @@
         "@type": "VideoGame",
         "name": "Grimoji",
         "url": "https://grimoji.io",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q141106820",
+          "https://www.igdb.com/games/grimoji",
+          "https://www.youtube.com/@GhettoCoders"
+        ],
         "description": "A gothic alchemy puzzle game blending grid-sliding mechanics of 2048 with match-3 chain reactions.",
-        "genre": ["Puzzle Game", "Logic Game"],
+        "genre": ["Puzzle", "Strategy", "Casual," "Logic"],
         "author": {
           "@type": "Person",
           "name": "Christin Nyakanyanga"
