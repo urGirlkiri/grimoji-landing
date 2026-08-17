@@ -1,5 +1,4 @@
 <script>
-	import Palette from '$lib/components/palette.svelte';
 	import { resolve } from '$app/paths';
 </script>
 
@@ -8,14 +7,14 @@
 	<meta name="description" content="Privacy Policy for Grimoji - Gothic Emoji Alchemy Puzzle Game" />
 </svelte:head>
 
-<Palette class="min-h-screen bg-(--void-black) font-['Caudex'] text-(--moonlight)">
+<main class="min-h-screen bg-void-black font-caudex text-moonlight">
 	<div class="mx-auto px-6 py-12 max-w-4xl">
-    <a href={resolve('/')} class="text-(--mist) hover:text-(--true-white)">← Back to Home</a>
-		<h1 class="font-['Eagle Lake'] mb-8 text-center text-4xl font-bold tracking-wider text-(--moonlight) md:text-5xl">
+    <a href={resolve('/')} class="text-mist hover:text-true-white">← Back to Home</a>
+		<h1 class="font-eagle-lake mb-8 text-center text-4xl font-bold tracking-wider text-moonlight md:text-5xl">
 			Privacy Policy
 		</h1>
 
-		<p class="mb-6 text-sm text-(--slate)">
+		<p class="mb-6 text-sm text-slate">
 			<strong>Last updated:</strong> August 16, 2026
 		</p>
 
@@ -23,14 +22,14 @@
 			This Privacy Policy describes how Ghetto Coders handles information for the Grimoji game. We do not collect, store, or share any Personal Data or Usage Data. By using the Service, You agree to the terms of this Privacy Policy.
 		</p>
 
-		<h2 class="font-['Eagle Lake'] mb-4 mt-10 text-2xl font-semibold text-(--moonlight)">Interpretation and Definitions</h2>
+		<h2 class="font-eagle-lake mb-4 mt-10 text-2xl font-semibold text-moonlight">Interpretation and Definitions</h2>
 
-		<h3 class="mb-3 mt-6 text-lg font-semibold text-(--mist)">Interpretation</h3>
+		<h3 class="mb-3 mt-6 text-lg font-semibold text-mist">Interpretation</h3>
 		<p class="mb-4 leading-relaxed">
 			The words whose initial letters are capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
 		</p>
 
-		<h3 class="mb-3 mt-6 text-lg font-semibold text-(--mist)">Definitions</h3>
+		<h3 class="mb-3 mt-6 text-lg font-semibold text-mist">Definitions</h3>
 		<p class="mb-3 leading-relaxed">For the purposes of this Privacy Policy:</p>
 		<ul class="space-y-2 mb-6 pl-4 leading-relaxed list-disc list-inside">
 			<li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
@@ -46,30 +45,30 @@
 			<li><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
 		</ul>
 
-		<h2 class="font-['Eagle Lake'] mb-4 mt-10 text-2xl font-semibold text-(--moonlight)">Collecting and Using Your Personal Data</h2>
+		<h2 class="font-eagle-lake mb-4 mt-10 text-2xl font-semibold text-moonlight">Collecting and Using Your Personal Data</h2>
 
-		<h3 class="mb-3 mt-6 text-lg font-semibold text-(--mist)">Types of Data Collected</h3>
+		<h3 class="mb-3 mt-6 text-lg font-semibold text-mist">Types of Data Collected</h3>
 		<p class="mb-4 leading-relaxed">
 			<strong>We do not collect, store, or share any Personal Data or Usage Data.</strong>
 			Grimoji is a standalone game designed to respect your privacy. All game progress and settings are saved locally on your device. We do not use third-party analytics, tracking cookies, or advertising networks that collect your device information.
 		</p>
 
-		<h3 class="mb-3 mt-6 text-lg font-semibold text-(--mist)">Use of Your Personal Data</h3>
+		<h3 class="mb-3 mt-6 text-lg font-semibold text-mist">Use of Your Personal Data</h3>
 		<p class="mb-4 leading-relaxed">
 			Because we do not collect any personal information, we do not use, share, or sell your data to any third parties.
 		</p>
 
-		<h2 class="font-['Eagle Lake'] mb-4 mt-10 text-2xl font-semibold text-(--moonlight)">Security of Your Personal Data</h2>
+		<h2 class="font-eagle-lake mb-4 mt-10 text-2xl font-semibold text-moonlight">Security of Your Personal Data</h2>
 		<p class="mb-4 leading-relaxed">
 			The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially reasonable means to protect Your Personal Data, We cannot guarantee its absolute security.
 		</p>
 
-		<h2 class="font-['Eagle Lake'] mb-4 mt-10 text-2xl font-semibold text-(--moonlight)">Children's Privacy</h2>
+		<h2 class="font-eagle-lake mb-4 mt-10 text-2xl font-semibold text-moonlight">Children's Privacy</h2>
 		<p class="mb-4 leading-relaxed">
 			Our Service does not address anyone under the age of 16. We do not knowingly collect personally identifiable information from anyone under the age of 16. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 16 without verification of parental consent, We take steps to remove that information from Our servers.
 		</p>
 
-		<h2 class="font-['Eagle Lake'] mb-4 mt-10 text-2xl font-semibold text-(--moonlight)">Links to Other Websites</h2>
+		<h2 class="font-eagle-lake mb-4 mt-10 text-2xl font-semibold text-moonlight">Links to Other Websites</h2>
 		<p class="mb-4 leading-relaxed">
 			Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.
 		</p>
@@ -77,7 +76,7 @@
 			We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
 		</p>
 
-		<h2 class="font-['Eagle Lake'] mb-4 mt-10 text-2xl font-semibold text-(--moonlight)">Changes to this Privacy Policy</h2>
+		<h2 class="font-eagle-lake mb-4 mt-10 text-2xl font-semibold text-moonlight">Changes to this Privacy Policy</h2>
 		<p class="mb-4 leading-relaxed">
 			We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
 		</p>
@@ -88,13 +87,13 @@
 			You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 		</p>
 
-		<h2 class="font-['Eagle Lake'] mb-4 mt-10 text-2xl font-semibold text-(--moonlight)">Contact Us</h2>
+		<h2 class="font-eagle-lake mb-4 mt-10 text-2xl font-semibold text-moonlight">Contact Us</h2>
 		<p class="mb-4 leading-relaxed">If you have any questions about this Privacy Policy, You can contact us:</p>
 		<p class="mb-2">
 			<strong>By email:</strong>
-			<a href="mailto:support@grimoji.io" class="text-(--magic-cyan) hover:underline">support@grimoji.io</a>
+			<a href="mailto:support@grimoji.io" class="text-magic-cyan hover:underline">support@grimoji.io</a>
 		</p>
 
-		<p class="mt-12 text-xs text-(--slate)">Generated using TermsFeed Privacy Policy Generator</p>
+		<p class="mt-12 text-xs text-slate">Generated using TermsFeed Privacy Policy Generator</p>
 	</div>
-</Palette>
+</main>

@@ -1,3 +1,22 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--color-void-black: #0e0e12;
+	--color-midnight: #1a1a24;
+	--color-twilight: #333346;
+	--color-dusk: #535373;
+	--color-slate: #8080a4;
+	--color-mist: #a6a6bf;
+	--color-moonlight: #e6e6ec;
+	--color-moonlight-soft: #eee6e6ec;
+	--color-true-white: #ffffff;
+	--color-crimson: #d10841;
+	--color-magic-cyan: #d9f8fa;
+	--color-magic-cyan-deep: #b3edfc;
+
+	--font-caudex: 'Caudex', serif;
+	--font-eagle-lake: 'Eagle Lake', cursive;
+}
+
