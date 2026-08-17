@@ -1,10 +1,11 @@
 <script>
 	import { platforms } from '$lib';
 	import Palette from '$lib/components/palette.svelte';
+	import { resolve } from '$app/paths';
 </script>
 
 <Palette
-	class="relative flex min-h-screen flex-col justify-between bg-(--void-black) bg-[url('/large_game.png')] bg-cover bg-center font-['Caudex']"
+	class="relative flex min-h-screen flex-col justify-between bg-(--void-black) bg-[url('/images/large_game.png')] bg-cover bg-center font-['Caudex']"
 >
 	<div
 		class="top-1/3 left-1/2 absolute rounded-full w-150 h-100 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
@@ -12,12 +13,12 @@
 
 	<header class="z-10 flex justify-between items-center mx-auto px-4 py-6 w-full max-w-6xl">
 		<div
-			class="font-['Eagle Lake'] flex flex-row items-center justify-center gap-2 text-xl font-bold tracking-wider text-(--moonlight) "
+			class="font-['Eagle Lake'] flex flex-row items-center justify-center gap-2 text-xl font-bold tracking-wider text-(--moonlight)"
 		>
 			<img src="favicon.svg" width="64" height="64" class="-mt-2" alt="Favicon" />
 		</div>
 		<h1
-			class="font-['Eagle Lake'] -ml-8 mb-6 text-4xl font-extrabold tracking-tight text-(--moonlight) md:text-6xl"
+			class="font-['Eagle Lake'] mb-6 -ml-8 text-4xl font-extrabold tracking-tight text-(--moonlight) md:text-6xl"
 		>
 			Grimoji
 		</h1>
@@ -31,7 +32,7 @@
 	<section
 		class="z-10 flex flex-col justify-center items-center mx-auto px-6 py-20 max-w-4xl text-center grow"
 	>
-		<p class="mx-auto mb-10 mt-24 max-w-xl text-base leading-relaxed text-(--moonlight) md:text-lg">
+		<p class="mx-auto mt-24 mb-10 max-w-xl text-base leading-relaxed text-(--moonlight) md:text-lg">
 			A gothic alchemy puzzle game combining the grid-sliding loops of <span
 				class="font-semibold text-(--true-white)">2048</span
 			>
@@ -57,11 +58,12 @@
 			</a>
 		</div>
 		<div class="flex flex-wrap justify-center items-center gap-3 p-4">
-			{#each platforms as platform}
+			{#each platforms as platform (platform.name)}
 				<a
+					id={platform.name}
 					href={platform.url}
 					target="_blank"
-					rel="noopener noreferrer"
+					rel="external noopener noreferrer"
 					class="rounded-md focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 hover:scale-105 transition-transform duration-200"
 					aria-label="Play Grimoji on {platform.name}"
 				>
@@ -80,7 +82,7 @@
 			class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-xs text-(--slate) sm:flex-row"
 		>
 			<p class="flex gap-1">
-				<a href="/privacy" class="underline">Privacy Policy</a>
+				<a href={resolve('/privacy')} class="underline">Privacy Policy</a>
 				<span>|</span>
 				<a href="https://ghettocoders.com" target="_blank" rel="noopener noreferrer"
 					>&copy; 2026 Ghetto Coders.</a

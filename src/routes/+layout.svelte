@@ -27,9 +27,8 @@
 	<meta name="apple-mobile-web-app-title" content="Grimoji" />
 	<meta name="application-name" content="Grimoji" />
 	<link rel="manifest" href="/site.webmanifest" />
-
-	<!-- eslint-disable svelte/no-at-html-tags, no-useless-escape -->
-	{@html `
+<!-- eslint-disable svelte/no-at-html-tags, no-useless-escape -->
+  {@html `
     <script type="application/ld+json">
     [
       {
@@ -49,7 +48,7 @@
           "https://www.youtube.com/@GhettoCoders"
         ],
         "description": "A gothic alchemy puzzle game blending grid-sliding mechanics of 2048 with match-3 chain reactions.",
-        "genre": ["Puzzle", "Strategy", "Casual," "Logic"],
+        "genre": ["Puzzle", "Strategy", "Casual", "Logic"],
         "author": {
           "@type": "Person",
           "name": "Christin Nyakanyanga"
@@ -59,12 +58,23 @@
           "name": "Ghetto Coders"
         },
         "applicationCategory": "Game",
-      "operatingSystem": "Android, IOS, Windows, Linux, MacOS"
+        "operatingSystem": "Android, IOS, Windows, Linux, MacOS",
+        "image": "https://grimoji.io/images/cover.jpeg",
+        "screenshot": [
+          "https://grimoji.io/screenshots/1.png",
+          "https://grimoji.io/screenshots/2.png",
+          "https://grimoji.io/screenshots/3.png",
+          "https://grimoji.io/screenshots/4.png",
+          "https://grimoji.io/screenshots/5.png",
+          "https://grimoji.io/screenshots/6.png",
+          "https://grimoji.io/screenshots/7.png",
+          "https://grimoji.io/screenshots/8.png"
+        ]
       }
     ]
     \<\/script>
   `}
-	<!-- eslint-enable svelte/no-at-html-tags, no-useless-escape -->
+  <!-- eslint-enable svelte/no-at-html-tags, no-useless-escape -->
 </svelte:head>
 
 {@render children()}
