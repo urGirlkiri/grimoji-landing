@@ -69,7 +69,14 @@
           "https://grimoji.io/screenshots/6.png",
           "https://grimoji.io/screenshots/7.png",
           "https://grimoji.io/screenshots/8.png"
-        ]
+        ],
+         "trailer": {
+          "@type": "VideoObject",
+          "name": "Grimoji Official Trailer",
+          "thumbnailUrl": "https://grimoji.io/images/trailer_thumbnail.png",
+          "uploadDate": "2026-07-21",
+          "contentUrl": "https://www.youtube.com/watch?v=Gv2R-JZVVsQ"
+        }
       }
     ]
     \<\/script>
