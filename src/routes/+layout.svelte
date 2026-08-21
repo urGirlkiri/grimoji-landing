@@ -27,7 +27,7 @@
 	<meta name="apple-mobile-web-app-title" content="Grimoji" />
 	<meta name="application-name" content="Grimoji" />
 	<link rel="manifest" href="/site.webmanifest" />
-<!-- eslint-disable svelte/no-at-html-tags, no-useless-escape -->
+  <!-- eslint-disable svelte/no-at-html-tags, no-useless-escape -->
   {@html `
     <script type="application/ld+json">
     [
@@ -70,11 +70,12 @@
           "https://grimoji.io/screenshots/7.png",
           "https://grimoji.io/screenshots/8.png"
         ],
-         "trailer": {
+        "trailer": {
           "@type": "VideoObject",
           "name": "Grimoji Official Trailer",
+          "description": "Official gameplay trailer for Grimoji, a gothic alchemy match-3 and merge puzzle game.",
           "thumbnailUrl": "https://grimoji.io/images/trailer_thumbnail.png",
-          "uploadDate": "2026-07-21",
+          "uploadDate": "2026-07-21T08:00:00+02:00",
           "contentUrl": "https://www.youtube.com/watch?v=Gv2R-JZVVsQ"
         }
       }
